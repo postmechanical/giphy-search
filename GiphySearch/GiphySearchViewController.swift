@@ -207,3 +207,9 @@ extension GiphySearchViewController: UICollectionViewDragDelegate {
         return [item]
     }
 }
+
+extension GiphySearchViewController: UIScrollViewDelegate {
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        searchBar.resignFirstResponder()
+    }
+}
