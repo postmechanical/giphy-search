@@ -26,6 +26,7 @@ class GiphySearchResultCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        imageView.prepareForReuse()
         imageView.cancelGIFDownload()
         delegate = nil
     }
